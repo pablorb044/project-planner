@@ -1,0 +1,54 @@
+
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+
+# Testing y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ==============================
+# Node.js / React
+# ==============================
+
+node_modules/
+dist/
+.vite/
+coverage/
+
+# ==============================
+# Variables de entorno y secretos
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Logs y archivos temporales
+# ==============================
+
+*.log
+logs/
+tmp/
+temp/
+
+# ==============================
+# Sistema operativo
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
