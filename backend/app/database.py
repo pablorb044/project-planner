@@ -1,8 +1,10 @@
+
 import os
 from pathlib import Path
 
 from dotenv import load_dotenv
 from sqlalchemy import URL, create_engine
+from sqlalchemy.orm import DeclarativeBase
 
 # Cargar las variables del .env situado en la raíz del proyecto.
 env_path = Path(__file__).resolve().parents[2] / ".env"
@@ -17,6 +19,11 @@ database_url = URL.create(
     port=5433,
     database=os.environ["POSTGRES_DB"],
 )
+
+# Crear la clase base de los modelos.
+class Base(DeclarativeBase):
+    pass
+
 
 # Crear el motor de conexión.
 engine = create_engine(
