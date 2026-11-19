@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 from datetime import datetime
@@ -16,9 +15,10 @@ from sqlalchemy import (
     func,
     text,
 )
-from sqlalchemy.dialects.postgresql import JSONB
-from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import Uuid
+from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.ext.mutable import MutableDict
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.database import Base
 
@@ -118,7 +118,7 @@ class ProjectSection(Base):
         nullable=False,
     )
     content: Mapped[dict[str, Any]] = mapped_column(
-        JSONB,
+        MutableDict.as_mutable(JSONB),
         default=dict,
         server_default=text("'{}'::jsonb"),
         nullable=False,
@@ -289,7 +289,7 @@ class ChangeProposal(Base):
         nullable=False,
     )
     content: Mapped[dict[str, Any]] = mapped_column(
-        JSONB,
+        MutableDict.as_mutable(JSONB),
         nullable=False,
     )
     status: Mapped[str] = mapped_column(
