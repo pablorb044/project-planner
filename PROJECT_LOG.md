@@ -1,0 +1,85 @@
+# PROJECT_LOG.md
+
+# PROJECT PLANNER — Development Log
+
+## v0.1 — 17/11/2026
+
+### Estado inicial
+Planificación conceptual completada. Desarrollo todavía no iniciado.
+
+### Hitos alcanzados
+- Definición del propósito y funcionamiento de PROJECT PLANNER.
+- Diseño de las cinco fases de planificación.
+- Definición del comportamiento y las capacidades del agente IA.
+- Decisión sobre persistencia del historial, planificación y contexto.
+- Selección y aprobación del stack tecnológico.
+- Definición del MVP, sus prioridades y funcionalidades excluidas.
+- Diseño del sistema de acceso mediante clave privada.
+
+### Documentación
+- `PROJECT_SPEC.md` — Primera versión creada (v0.1).
+- `PROJECT_LOG.md` — Primera versión creada (v0.1).
+
+### Próximo paso
+Elaborar el roadmap de implementación y comenzar el desarrollo.
+
+---
+
+## Sesión 1 — 18/11/2026
+
+### Hitos alcanzados
+- Inicialización del repositorio y configuración del frontend con React, TypeScript y Vite.
+- Preparación del backend con Python y FastAPI.
+- Configuración del entorno virtual y las dependencias iniciales.
+- Configuración de GitHub Actions para comprobar frontend y backend.
+- Preparación de PostgreSQL 17 mediante Docker Compose, con volumen persistente.
+- Instalación de SQLAlchemy, Psycopg y python-dotenv.
+- Conexión entre Python y PostgreSQL verificada correctamente.
+
+### Commits realizados
+- `7584678` — Inicialización del frontend y backend.
+- `1bc63a1` — Configuración inicial de GitHub Actions.
+- `feat: configure PostgreSQL and database connection` — Configuración de PostgreSQL y conexión desde Python.
+
+### Estado al finalizar la sesión
+- Fase 1 — Preparación del entorno: tareas principales completadas. Pendiente verificar la ejecución de GitHub Actions en GitHub.
+- Fase 2 — Base de datos y persistencia: PostgreSQL y conexión desde Python configurados. Pendiente SQLAlchemy declarativo, Alembic y modelos de datos.
+
+### Próximo paso
+Configurar Alembic y comenzar a definir los modelos de datos de la aplicación.
+
+
+---
+
+## Sesión 2 — 19/11/2026
+
+### Hitos alcanzados
+- Configuración de SQLAlchemy y gestión de sesiones de base de datos.
+- Configuración de Alembic y creación de la migración inicial.
+- Diseño e implementación de los seis modelos de datos y sus relaciones.
+- Creación de las seis tablas en PostgreSQL.
+- Configuración de las relaciones y eliminación en cascada.
+- Implementación de la creación de proyectos con sus cinco secciones iniciales.
+- Generación de claves privadas seguras y almacenamiento mediante hash SHA-256.
+- Implementación de la recuperación de proyectos mediante clave privada.
+- Implementación de la autenticación mediante la dependencia `get_current_project`.
+- Implementación de la consulta del proyecto autenticado.
+- Implementación de la eliminación de proyectos.
+- Verificación de la eliminación en cascada de los datos relacionados en PostgreSQL.
+- Comprobación de los principales casos de autenticación: credenciales válidas, ausentes e incorrectas.
+
+### Commits realizados
+- `28ed8fb` — Implementación de los modelos iniciales y migración.
+- `eb2990d` — Gestión de sesiones de base de datos.
+
+### Estado al finalizar la sesión
+- Fase 1 — Preparación del entorno: tareas principales completadas. Pendiente verificar la ejecución de GitHub Actions en GitHub.
+- Fase 2 — Base de datos y persistencia: SQLAlchemy, Alembic, modelos, migraciones y operaciones básicas completados. Pendientes los tests automatizados.
+- Fase 3 — Acceso y ciclo de vida de proyectos: creación, recuperación, autenticación y eliminación implementadas. Pendientes protección frente a fuerza bruta, validaciones adicionales y pruebas automatizadas.
+
+### Próximo paso
+Preparar una base de datos independiente para tests e implementar las primeras pruebas automatizadas con Pytest.
+
+---
+
+*Este documento recoge los principales hitos del camino de desarrollo, no cada cambio o tarea individual.*
