@@ -82,4 +82,30 @@ Preparar una base de datos independiente para tests e implementar las primeras p
 
 ---
 
+## Sesión 3 — 22/11/2026
+
+### Hitos alcanzados
+- Preparación de una base de datos independiente para las pruebas automatizadas.
+- Configuración de Pytest y creación de fixtures compartidas para los tests.
+- Implementación de pruebas para la conexión a la base de datos y la creación de tablas.
+- Implementación de pruebas para la creación, recuperación y eliminación de proyectos.
+- Comprobación de la autenticación, validación de claves y eliminación en cascada.
+- Verificación de la protección frente a intentos repetidos de acceso.
+- Incorporación de límites de solicitudes mediante SlowAPI en los endpoints de acceso, consulta y eliminación de proyectos.
+- Ejecución satisfactoria de los tests del backend: 17 pruebas superadas.
+- Limpieza de los componentes y estilos iniciales de la plantilla de Vite.
+- Verificación del frontend mediante compilación y análisis estático, ambos sin errores.
+
+### Commits realizados
+- `f3d7c65` — Tests automatizados del backend y protección frente a solicitudes excesivas (`test: add backend tests and rate limiting`).
+
+### Estado al finalizar la sesión
+- Fase 1 — Preparación del entorno: completada.
+- Fase 2 — Base de datos y persistencia: completada.
+- Fase 3 — Acceso y ciclo de vida de proyectos: completada.
+- Fase 4 — Estructura inicial del frontend: iniciada. Plantilla inicial de Vite limpiada. Pendiente desarrollar la interfaz de la aplicación.
+
+### Próximo paso
+Comenzar el diseño de la estructura visual general del frontend y desarrollar la pantalla de bienvenida.
+
 *Este documento recoge los principales hitos del camino de desarrollo, no cada cambio o tarea individual.*

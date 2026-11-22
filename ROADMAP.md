@@ -33,7 +33,7 @@
 - Diseñar los modelos iniciales. x
 - Implementar la conexión entre backend y base de datos. x
 - Crear operaciones básicas de persistencia. x
-- Comprobar el funcionamiento mediante tests.
+- Comprobar el funcionamiento mediante tests. x
 
 **Resultado:** backend conectado a PostgreSQL y capaz de guardar y recuperar información.
 
@@ -45,9 +45,9 @@
 - Generar claves privadas seguras. x
 - Almacenar las claves mediante hash. x
 - Implementar recuperación mediante clave. x
-- Proteger los intentos de recuperación frente a fuerza bruta.
+- Proteger los intentos de recuperación frente a fuerza bruta. x
 - Implementar eliminación de proyectos y datos asociados. x
-- Validar los principales casos de error.
+- Validar los principales casos de error. x
 
 **Resultado:** el usuario puede crear, recuperar y eliminar sus proyectos sin registro tradicional.
 
