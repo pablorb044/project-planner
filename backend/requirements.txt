@@ -3,3 +3,6 @@ sqlalchemy
 psycopg[binary]
 python-dotenv
 alembic
+slowapi
+pytest
+httpx
