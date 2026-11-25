@@ -1,10 +1,11 @@
+
 # ROADMAP.md
 
 # PROJECT PLANNER — Roadmap de desarrollo
 
 **Objetivo:** construir un MVP funcional y desplegado.  
 **Estimación inicial:** 200–250 horas.  
-**Estado:** pendiente de inicio.
+**Estado:** en desarrollo.
 
 ---
 
@@ -55,14 +56,17 @@
 
 **Estimación: 12–16 horas**
 
-- Diseñar la estructura visual general.
-- Crear la pantalla de bienvenida.
+- Diseñar la estructura visual general. x
+- Configurar los estilos globales, la paleta de colores y las tipografías. x
+- Implementar la navegación principal y los componentes de botones. x
+- Crear la estructura visual de la landing: Hero, franja de valores y etapas de planificación. x
+- Completar el footer de la landing.
 - Implementar creación y recuperación de proyectos.
 - Crear el espacio de trabajo principal.
 - Preparar el panel de planificación y el panel del agente.
 - Incorporar navegación entre las cinco secciones.
 
-**Resultado:** interfaz navegable con la estructura principal de la aplicación.
+**Resultado:** interfaz visual de bienvenida implementada y estructura principal del workspace preparada para continuar su desarrollo.
 
 ## Fase 5 — Planificación estructurada
 
@@ -209,4 +213,4 @@ El PDF se intentará incluir si el tiempo lo permite.
 
 ---
 
-*Este roadmap es una guía de desarrollo, no un contrato de horas. Las estimaciones podrán ajustarse cuando aparezcan dificultades técnicas reales. No se añadirán funcionalidades por el mero hecho de tener tiempo disponible.*
+**Este roadmap es una guía de desarrollo, no un contrato de horas. Las estimaciones podrán ajustarse cuando aparezcan dificultades técnicas reales. No se añadirán funcionalidades por el mero hecho de tener tiempo disponible.**

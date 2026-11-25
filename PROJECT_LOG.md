@@ -97,7 +97,7 @@ Preparar una base de datos independiente para tests e implementar las primeras p
 - Verificación del frontend mediante compilación y análisis estático, ambos sin errores.
 
 ### Commits realizados
-- `f3d7c65` — Tests automatizados del backend y protección frente a solicitudes excesivas (`test: add backend tests and rate limiting`).
+- `test: add backend tests and rate limiting` — Tests automatizados del backend y protección frente a solicitudes excesivas.
 
 ### Estado al finalizar la sesión
 - Fase 1 — Preparación del entorno: completada.
@@ -107,5 +107,27 @@ Preparar una base de datos independiente para tests e implementar las primeras p
 
 ### Próximo paso
 Comenzar el diseño de la estructura visual general del frontend y desarrollar la pantalla de bienvenida.
+
+## Sesión 4 — 25/11/2026
+
+### Hitos alcanzados
+- Configuración de Tailwind CSS v4 mediante el plugin de Vite.
+- Instalación de Lucide React para los iconos de la interfaz.
+- Definición de los estilos globales, paleta de colores y tipografías.
+- Implementación de la navegación principal y los componentes de botones.
+- Desarrollo del Hero de la landing, con ilustración, presentación y tarjetas de acceso.
+- Creación de `HeroValueStrip` con cuatro elementos visuales.
+- Creación de `PlanningPipeline` con las cinco etapas de planificación del proyecto.
+- Ajustes de colores, fondos, espaciado y distribución responsive.
+- Definición de la distribución final de la landing, manteniendo el flujo natural de desplazamiento sin forzar una altura de pantalla completa.
+
+### Estado al finalizar la sesión
+- Fase 1 — Preparación del entorno: completada.
+- Fase 2 — Base de datos y persistencia: completada.
+- Fase 3 — Acceso y ciclo de vida de proyectos: completada.
+- Fase 4 — Estructura e interfaz inicial del frontend: en desarrollo. Landing visual implementada. Pendiente continuar con la interfaz del workspace.
+
+### Próximo paso
+Comenzar el desarrollo visual del workspace: navegación lateral, panel de planificación y panel de conversación con el agente IA.
 
 *Este documento recoge los principales hitos del camino de desarrollo, no cada cambio o tarea individual.*

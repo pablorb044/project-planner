@@ -1,11 +1,15 @@
 import './App.css'
+import Hero from './components/landing/Hero'
+import { HeroValueStrip } from './components/HeroValueStrip'
+import { PlanningPipeline } from './components/PlanningPipeline'
 
 function App() {
   return (
-    <main className="app-shell">
-      <h1>PROJECT PLANNER</h1>
-      <p>Tu espacio de planificación de proyectos.</p>
-    </main>
+    <>
+      <Hero />
+      <HeroValueStrip />
+      <PlanningPipeline />
+    </>
   )
 }
 

@@ -1,4 +1,4 @@
-.app-shell {
+#root {
   min-height: 100vh;
-  padding: 32px;
+  width: 100%;
 }
