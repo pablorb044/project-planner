@@ -25,7 +25,7 @@ function Hero({ onCreateProject, onAccessProject }: HeroProps) {
 
   return (
     <main className="text-[#292d30]">
-      <section className="relative isolate min-h-[680px] overflow-hidden bg-[#e8d5b8] lg:min-h-[680px]">
+    <section className="relative isolate min-h-[680px] overflow-hidden bg-[#e8d5b8] lg:min-h-[680px]">
 
         {/* Navbar */}
         <Navbar />
@@ -35,7 +35,7 @@ function Hero({ onCreateProject, onAccessProject }: HeroProps) {
           <div className="max-w-[790px]">
             
           {/* Presentación del proyecto */}
-            <div className="rounded-xl border-2 border-[#b18c58]/85 bg-[#f0e1c5]/65 p-5 shadow-[0_5px_18px_rgba(70,48,25,0.08)] backdrop-blur-sm sm:p-6 lg:bg-[#f0e1c5]/55">
+            <div className="rounded-xl border-2 border-[#b18c58]/85 bg-[#f0e1c5]/65 p-5 shadow-[0_5px_18px_rgba(70,48,25,0.08)] backdrop-blur-sm sm:p-6">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#8b7657]">
               Your next project starts here
             </p>
@@ -127,11 +127,10 @@ function Hero({ onCreateProject, onAccessProject }: HeroProps) {
             src={HeroArtwork}
             alt=""
             className="
-              absolute bottom-0 right-0
-              h-[46%] w-auto max-w-none
-              object-contain object-right-bottom
-              sm:h-[85%]
-              lg:h-full lg:w-full lg:object-cover lg:object-right
+              absolute inset-0
+              h-full w-full
+              object-cover object-left
+              sm:object-right
             "
           />
         </div>
