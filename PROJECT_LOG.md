@@ -130,4 +130,36 @@ Comenzar el diseño de la estructura visual general del frontend y desarrollar l
 ### Próximo paso
 Comenzar el desarrollo visual del workspace: navegación lateral, panel de planificación y panel de conversación con el agente IA.
 
+
+---
+
+## Sesión 5 — 26/11/2026
+
+### Hitos alcanzados
+- Finalización visual de la landing, incluyendo el footer y los últimos ajustes de diseño.
+- Incorporación de la textura cartográfica como recurso visual de la sección de planificación.
+- Instalación de Axios y creación del cliente HTTP centralizado.
+- Configuración de la URL del backend mediante variables de entorno.
+- Integración de la creación de proyectos con el endpoint del backend.
+- Implementación del modal de presentación de la clave privada, con opción para copiarla y advertencia sobre su pérdida.
+- Almacenamiento temporal de la clave de acceso en sessionStorage.
+- Integración de la recuperación de proyectos mediante clave privada.
+- Verificación de la autenticación mediante el endpoint de consulta del proyecto.
+- Configuración de CORS en FastAPI para permitir la comunicación entre frontend y backend.
+- Compilación de producción del frontend completada correctamente.
+
+### Commits realizados
+- `4d55265` — Finalización visual de la landing.
+- `0ce8218` — Integración del frontend con la API de proyectos.
+
+### Estado al finalizar la sesión
+- Fase 1 — Preparación del entorno: completada.
+- Fase 2 — Base de datos y persistencia: completada.
+- Fase 3 — Acceso y ciclo de vida de proyectos: completada.
+- Fase 4 — Estructura e interfaz inicial del frontend: landing completada y creación y recuperación de proyectos conectadas con el backend. Pendiente desarrollar el workspace.
+
+### Próximo paso
+Comenzar el desarrollo visual del workspace: navegación lateral, panel de planificación y panel de conversación con el agente IA.
+
+
 *Este documento recoge los principales hitos del camino de desarrollo, no cada cambio o tarea individual.*

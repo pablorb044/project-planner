@@ -60,8 +60,8 @@
 - Configurar los estilos globales, la paleta de colores y las tipografías. x
 - Implementar la navegación principal y los componentes de botones. x
 - Crear la estructura visual de la landing: Hero, franja de valores y etapas de planificación. x
-- Completar el footer de la landing.
-- Implementar creación y recuperación de proyectos.
+- Completar el footer de la landing. x
+- Implementar creación y recuperación de proyectos. x
 - Crear el espacio de trabajo principal.
 - Preparar el panel de planificación y el panel del agente.
 - Incorporar navegación entre las cinco secciones.
