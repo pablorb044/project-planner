@@ -1,3 +1,4 @@
+import MapTexture from '../assets/images/MapTexture.jpg'
 
 import {
   Lightbulb,
@@ -47,18 +48,25 @@ const stages = [
 
 export function PlanningPipeline() {
   return (
-    <section className="bg-[#e8d5b8] px-6 py-20 sm:py-24">
+    <section
+      className="relative bg-[#e8d5b8] px-6 py-20 sm:py-24"
+      style={{
+        backgroundImage: `url(${MapTexture})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="mx-auto max-w-[1180px]">
         <div className="mx-auto mb-14 max-w-2xl text-center">
-          <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.2em] text-[#a58a5b]">
+          <span className="mb-4 block text-xs font-bold uppercase tracking-[0.2em] text-[#a58a5b]">
             The planning process
           </span>
 
-          <h2 className="text-3xl sm:text-4xl">
+          <h2 className="text-3xl font-semibold sm:text-4xl">
             From first idea to a clear plan
           </h2>
 
-          <p className="mt-5 text-sm leading-7 text-[#777a78] sm:text-base">
+          <p className="mt-5 text-sm font-medium leading-7 text-[#777a78] sm:text-base">
             Every successful project starts with thoughtful planning.
             Explore each stage and shape your idea into a structured,
             achievable plan.
