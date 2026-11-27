@@ -139,6 +139,12 @@ class ProjectSection(Base):
         back_populates="sections",
     )
 
+    messages: Mapped[list[Message]] = relationship(
+        back_populates="section",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+
 
 class ProjectDecision(Base):
     __tablename__ = "project_decisions"
@@ -194,6 +200,11 @@ class Message(Base):
             "project_id",
             "created_at",
         ),
+        Index(
+            "ix_messages_section_created",
+            "section_id",
+            "created_at",
+        ),
     )
 
     id: Mapped[UUID] = mapped_column(
@@ -205,6 +216,11 @@ class Message(Base):
     project_id: Mapped[UUID] = mapped_column(
         Uuid,
         ForeignKey("projects.id", ondelete="CASCADE"),
+        nullable=False,
+    )
+    section_id: Mapped[UUID] = mapped_column(
+        Uuid,
+        ForeignKey("project_sections.id", ondelete="CASCADE"),
         nullable=False,
     )
     role: Mapped[str] = mapped_column(
@@ -222,6 +238,9 @@ class Message(Base):
     )
 
     project: Mapped[Project] = relationship(
+        back_populates="messages",
+    )
+    section: Mapped[ProjectSection] = relationship(
         back_populates="messages",
     )
 
