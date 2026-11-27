@@ -181,7 +181,7 @@ def test_access_project_with_empty_key(client):
 
     assert response.status_code == 422
 
-def test_get_current_project_rate_limit(client):
+def test_get_current_project_allows_repeated_requests(client):
     creation_response = client.post("/projects")
     access_key = creation_response.json()["access_key"]
 
@@ -195,7 +195,7 @@ def test_get_current_project_rate_limit(client):
 
         responses.append(response.status_code)
 
-    assert responses == [200, 200, 200, 200, 200, 429]
+    assert responses == [200, 200, 200, 200, 200, 200]
 
 def test_delete_project_rate_limit(client):
     access_keys = []

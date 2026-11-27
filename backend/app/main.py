@@ -109,7 +109,6 @@ def access_project(
 
 
 @app.get("/projects/me", response_model=ProjectAccessResponse)
-@limiter.limit("5/minute")
 def get_my_project(
     request: Request,
     project: Project = Depends(get_current_project),
