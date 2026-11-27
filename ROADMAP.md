@@ -62,9 +62,9 @@
 - Crear la estructura visual de la landing: Hero, franja de valores y etapas de planificación. x
 - Completar el footer de la landing. x
 - Implementar creación y recuperación de proyectos. x
-- Crear el espacio de trabajo principal.
-- Preparar el panel de planificación y el panel del agente.
-- Incorporar navegación entre las cinco secciones.
+- Crear el espacio de trabajo principal. x
+- Preparar el panel de planificación y el panel del agente. x
+- Incorporar navegación entre las cinco secciones. x
 
 **Resultado:** interfaz visual de bienvenida implementada y estructura principal del workspace preparada para continuar su desarrollo.
 

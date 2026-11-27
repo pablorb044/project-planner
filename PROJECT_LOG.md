@@ -161,5 +161,38 @@ Comenzar el desarrollo visual del workspace: navegación lateral, panel de plani
 ### Próximo paso
 Comenzar el desarrollo visual del workspace: navegación lateral, panel de planificación y panel de conversación con el agente IA.
 
+---
+
+## Sesión 6 — 27/11/2026
+
+### Hitos alcanzados
+- Implementación de la navegación entre la landing y el workspace mediante React Router.
+- Protección de la ruta del workspace mediante la clave privada del proyecto.
+- Verificación de la creación, recuperación y persistencia del acceso al workspace tras recargar la página.
+- Desarrollo de la primera versión visual del workspace con identidad victoriana y cartográfica.
+- Implementación de la sidebar con navegación entre las cinco secciones de planificación.
+- Desarrollo de la cabecera dinámica de sección y del área central de conversación con el agente.
+- Adaptación responsive del workspace para escritorio, tablet y dispositivos móviles, incluyendo menú lateral desplegable.
+- Personalización de fondos, tipografías, colores, elementos decorativos y barra de desplazamiento.
+- Modificación del modelo `Message` para asociar cada mensaje tanto a un proyecto como a una sección, permitiendo historiales de conversación independientes.
+- Configuración de las relaciones ORM entre `ProjectSection` y `Message`.
+- Creación y aplicación de la migración Alembic `7413fbe06e4c`.
+- Verificación de la estructura de `messages` en PostgreSQL, incluyendo claves foráneas e índices.
+- Ajuste del límite de solicitudes de `GET /projects/me` para evitar errores durante la navegación y recarga del workspace.
+- Actualización de los tests para reflejar el comportamiento actual del endpoint.
+- Ejecución satisfactoria de los tests del backend: 17 pruebas superadas.
+
+### Estado al finalizar la sesión
+- Fase 1 — Preparación del entorno: completada.
+- Fase 2 — Base de datos y persistencia: completada, con la estructura inicial de conversaciones por sección implementada. Pendiente desarrollar la persistencia de mensajes y contexto.
+- Fase 3 — Acceso y ciclo de vida de proyectos: completada.
+- Fase 4 — Estructura e interfaz del frontend: landing completada y primera versión visual del workspace implementada. Navegación y acceso integrados.
+- Fase 5 — Agente IA y planificación: pendiente de implementación.
+
+### Próximo paso
+Continuar con la implementación de la persistencia de conversaciones por sección y el contexto compartido del proyecto, preparando la integración posterior del agente IA.
+
+### Commits realizados
+Pendientes de registrar.
 
 *Este documento recoge los principales hitos del camino de desarrollo, no cada cambio o tarea individual.*
